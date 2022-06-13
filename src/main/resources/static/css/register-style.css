@@ -1,0 +1,175 @@
+/*:root {
+      font-size: calc(0.5em + 1vw);
+}*/
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	background: #000;
+}
+
+
+/*********************************************************
+*************************HEADER***************************
+**********************************************************/
+
+
+header{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+header img{
+	width: 100px;
+	height: 38px;
+	padding-left: 0.6em;
+	padding-top: 0.95em;
+}
+
+
+
+
+
+
+
+/*********************************************************
+****************************MAIN**************************
+**********************************************************/
+
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 1240px;
+	margin: 2em auto;
+	padding: 0;
+	grid-template-rows: 100px 1fr;
+}
+
+main h1{
+	width: 1200px;
+	
+	margin: 0 auto;
+	font-family: Noto Serif Display;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 87px;
+	text-align: center;
+	letter-spacing: 0.805em;
+	color: #fff;
+	padding-top: 0;
+}
+
+h1 .spacing-correction{
+	letter-spacing: 0;
+}
+
+
+/*********************************************************
+************************REGISTER FORM*********************
+**********************************************************/
+
+
+.closed1{
+	display: none;
+}
+
+.reg-form{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 1200px;
+	height: 620px;
+	padding: 0;
+	background: #000;
+	padding-top: 1em;
+}
+
+.form-logo img{
+	display: block;
+	width: 200px;
+
+	margin: 1.5em auto;
+	padding-bottom: 1em;
+}
+
+.inputs-cont{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 0 0 0 45px;
+	gap: 30px;
+}
+
+.inputs-cont > *{
+	padding-right: 1.5em;
+}
+
+
+.inputs-cont .nickname{
+}
+
+.inputs-cont label{
+	line-height: 19px;
+	color: #A08C8C;
+	font-size: 1em;
+}
+
+.inputs-cont input[type="text"], .inputs-cont input[type="email"], .inputs-cont input[type="date"], .inputs-cont input[type="password"]{
+	background: #F2F2F2;
+	border-radius: 20px;
+	border: 0;
+	width: 500px;
+	height: 40px;
+	display: block;
+	margin-top: .3em;
+	padding-left: 1em;
+	padding-right: 0.6em;
+	transition: .3s;
+}
+
+.inputs-cont input[type="text"]:hover, .inputs-cont input[type="email"]:hover, .inputs-cont input[type="date"]:hover, .inputs-cont input[type="password"]:hover {
+	width: 550px;
+}
+
+.inputs-cont input[type="submit"]{
+	background: #fff;
+	border-radius: 32.41px;
+	font-size: 1.1em;
+	color: #000;
+	padding: .6em .8em;
+	font-weight: normal;
+	border: 1px solid transparent;
+}
+
+.inputs-cont input[type="submit"] {
+	color: #fff;
+	background: #000;
+	border: 1px solid #fff;
+	transition: .3s;
+}
+
+.inputs-cont input[type="submit"]:hover{
+	background: #fff;
+	color: #000;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+.inputs-cont .for-button{
+	width: 145px;
+	height: 43px;
+	margin-top: 30px;
+
+}
+
+.password-container {
+	display: flex;
+	flex-direction: column;
+	width: 900px;
+	justify-content: space-between;
+}

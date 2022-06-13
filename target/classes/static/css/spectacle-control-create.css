@@ -1,0 +1,458 @@
+/*:root {
+      font-size: calc(0.5em + 1vw);
+}*/
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+
+/*********************************************************
+****************************MAIN**************************
+**********************************************************/
+
+.wrapper{
+	display: flex;
+
+}
+
+/*****************************************
+******************Navigation**************
+*****************************************/
+
+
+.main-window {
+	
+	width: 70%;
+	
+}
+
+aside{
+
+	min-height: 100vh;
+	width: 260px;
+	background: linear-gradient(180deg, #313291 0%, #8C8EFF 100%);
+}
+
+aside nav{
+	padding-top: 1.5em;
+}
+
+aside ul{
+	list-style-type: none;
+	padding-left: .8em;
+	margin-bottom: 1em;
+	font-weight: bold;
+
+}
+
+aside ul a{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding-left: 2.1em;
+}
+
+aside ul a:hover{
+	text-decoration: underline;
+}
+
+aside ul .selected{
+	text-decoration: underline;
+}
+
+aside .main-menu{
+	position: relative;
+	font-size: 1.25em;
+	color: #fff;
+	padding-left: 1em;
+	border-bottom: 2px solid #fff;
+	width: 203px;
+}
+
+aside img{
+	width: 18px;
+	height: 18px;
+}
+
+.main-menu img{
+	position: absolute;
+	top: 0.05em;
+	left: -0.15em;
+	width: 21px;
+	height: 21px;
+
+}
+
+.user-control-img{
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	top: 0;
+	left: 0.35em;
+}
+
+.spectacle-control-img{
+	position: absolute;
+	top: -0.2em;
+	left: 0.45em;
+}
+
+.statistics-img{
+	position: absolute;
+	top: -0.2em;
+	left: 0.45em;
+}
+
+.exit-img{
+	position: absolute;
+	top: -0.2em;
+	left: 0.37em;
+}
+
+aside ul a{
+	font-size: 0.8em;
+	text-align: left;
+}
+
+aside li{
+	margin-bottom: 1.2em;
+}
+
+
+/*********************************************************
+************************REGISTER FORM*********************
+**********************************************************/
+
+.closed1{
+	display: none;
+}
+
+
+.creating-form-container{
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.form-content{
+	border: 1px solid #c1c1c1;
+	padding: 0 4em 2em 4em;
+	border-radius: 20px;
+	height: 100%;
+
+
+}
+
+
+.form-logo{
+	
+}
+.form-logo img{
+	display: block;
+	width: 235px;
+	height: 58px;
+	margin: 1.5em auto;
+}
+
+
+.inputs-cont{
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	gap: 30px;
+}
+
+
+/*****************************************
+**************TEXT PART OF FORM***********
+*****************************************/
+
+
+.container-margin{
+	margin-bottom: 1.5em;
+}
+
+.inputs-cont .nickname{
+	margin-right: 3em;
+}
+
+.inputs-cont label{
+	line-height: 19px;
+	color: #A08C8C;
+	font-size: 1em;
+}
+
+.inputs-cont input[type="text"], .inputs-cont .spectacle-members-input, .inputs-cont textarea, .inputs-cont input[type="datetime-local"]{
+	background: #F2F2F2;
+	border-radius: 20px;
+	border: 0;
+	width: 330px;
+	max-width: 330px;
+	min-height: 40px;
+	display: block;
+	margin-top: .3em;
+	padding-left: 1em;
+	padding-right: 0.6em;
+}
+
+
+.datalist-container{
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.addActor{
+	background: #F2F2F2;
+	border-radius: 20px;
+	border: 0;
+	width: 270px;
+	max-width: 270px;
+	min-height: 40px;
+	display: block;
+	margin-top: .3em;
+	padding-left: 1em;
+	padding-right: 0.6em;
+}
+
+.datalist-btn{
+	position: absolute;
+	background: #313290;
+	border-radius: 20px;
+	font-size: .7em;
+	color: #fff;
+	padding: .4em .6em;
+	font-weight: normal;
+	border: 1px solid transparent;
+	top: 0.75em;
+	right: 0;
+	text-transform: uppercase;
+
+}
+
+.datalist-btn:hover{
+	background: #fff;
+	color: #313290;
+	border: 1px solid #313290;
+	cursor: pointer;
+}
+
+.spectacle-members-input{
+	display: flex;
+	min-height: 120px;
+	padding: 10px 0;
+	width: 100%;
+	height: auto;
+	
+}
+
+.actor-element{
+	display: inline-block;
+	font-size: 0.8em;
+	background: #313290;
+	border-radius: 32.41px;
+	color: #fff;
+	line-height: 12px;
+	font-weight: normal;
+	padding: 0.5em .8em;
+	margin-bottom: 0.3em;
+	
+}
+
+.add-margin{
+	margin-right: 0.3em;
+}
+
+.actor-name{
+	margin-right: 0.4em;
+	display: inline-block;
+}
+
+.btn-container{
+	display: inline-block;
+	border: 0;
+	width: 10.5px;
+	height: 10.5px;
+	position: relative;
+
+}
+
+.actor-delete-btn{
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+	width: 10.5px;
+	height: 10.5px;
+	position: absolute;
+	top: 1.5px;
+}
+
+.actor-delete-btn img{
+	display: block;
+	
+	margin: 0 auto;
+	width: 10.5px;
+	height: 10.5px;
+	
+}
+
+
+.worker-name, .worker-element{
+
+}
+
+
+.spectacle-description{
+	margin-top: 1.5em;
+}
+
+.spectacle-description-input{
+	height: 192px;
+	resize: none;
+	padding: 10px;
+}
+
+
+/*****************************************
+************IMAGES PART OF FORM***********
+*****************************************/
+
+
+.images-container{
+	margin-top: 1.5em;
+}
+
+.images-container img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+.images-container img{
+	width: 375px;
+	height: 160px;
+	border-radius: 20px;
+}
+
+.main-image-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #F2F2F2;
+	border-radius: 20px;
+	width: 375px;
+	height: 160px;
+}
+
+.main-image-container img{
+	display: block;
+	width: 375px;
+	height: 160px;
+	position: relative;
+}
+
+
+.secondary-images-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.85em;
+}
+
+.secondary-images-container p{
+	width: 105px;
+	height: 105px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #F2F2F2;
+	border-radius: 20px;
+}
+
+.secondary-images-container img{
+	width: 105px;
+	height: 105px;
+}
+
+
+.inputfile {
+	width: 105px;
+	height: 105px;
+	opacity: 0;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 20px;
+	
+	z-index: 5;
+}
+
+.main-image-container .inputfile{
+	width: 375px;
+	height: 160px;
+}
+
+
+
+.inputs-cont input[type="submit"]{
+	background: #313290;
+	border-radius: 32.41px;
+	font-size: 1.1em;
+	color: #fff;
+	padding: .6em .8em;
+	font-weight: normal;
+	border: 1px solid transparent;
+}
+
+.inputs-cont input[type="submit"]:hover{
+	background: #fff;
+	color: #313290;
+	border: 1px solid #313290;
+	cursor: pointer;
+}
+
+.inputs-cont .for-button{
+	width: 145px;
+	height: 43px;
+	position: absolute;
+	bottom: -1.45em;
+	right: -0.95em;
+}
+
+
+.inputs-cont .for-button2 input[type="submit"]{
+	background: #313290;
+	border-radius: 32.41px;
+	font-size: 1.1em;
+	color: #fff;
+	padding: .6em 1.4em;
+	font-weight: normal;
+	border: 1px solid transparent;
+}
+
+.inputs-cont .for-button2 input[type="submit"]:hover{
+	background: #fff;
+	color: #313290;
+	border: 1px solid #313290;
+	cursor: pointer;
+}
+
+.veryHidden{
+	position: absolute;
+	top: -100em;
+	left: -100em;
+}
+
+.el-with-after{
+	position: relative;
+}
+
+.el-with-after:after{
+	position: absolute;
+	content: "\007C";
+	right: -14px;
+	top: -1px;
+}

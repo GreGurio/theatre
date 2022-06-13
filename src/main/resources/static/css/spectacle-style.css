@@ -1,0 +1,731 @@
+/*:root {
+      font-size: calc(0.5em + 1vw);
+}*/
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+
+/*********************************************************
+*************************HEADER***************************
+**********************************************************/
+
+
+header{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+header img{
+	width: 235px;
+	height: 58px;
+	padding-left: 0.6em;
+	padding-top: 0.95em;
+}
+
+header ul{
+	box-sizing: border-box;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 0.6em;
+}
+
+header ul > li + li{
+	margin-left: 1.5em;
+}
+
+header .el-with-before{
+	position: relative;
+}
+
+header .el-with-before:before{
+	position: absolute;
+	content: "\007C";
+	left: -14px;
+	top: -1px;
+
+}
+
+header ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+header ul li a:hover{
+	text-decoration: underline;
+}
+
+header .register-btn{
+
+	border: 1px solid transparent;
+	background: #000;
+	color: #fff;
+	border-radius: 1em;
+	padding: .4em .6em;
+	font-size: .9em;
+	cursor: pointer;
+}
+
+header .register-btn:hover{
+	background: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
+
+
+/*********************************************************
+************************REGISTER FORM*********************
+**********************************************************/
+
+
+.closed1{
+	display: none;
+}
+
+.form-container{
+	position: absolute;
+	top: 7em;
+	left: 20.5em;
+	width: 850px;
+	height: 645px;
+	z-index: 2;
+	background: #fff;
+	padding: 0;
+	border: 1px solid #c1c1c1;
+}
+
+.reg-form{
+	position: relative;
+}
+
+.form-close-btn{
+	border: 0;
+	border-radius: 0 0 0 10px;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #ff0000;
+	top: -25px;
+	right: -1px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-close-btn img{
+	display: block;
+	width: 25px;
+	height: 25px;
+	top: -3em;
+}
+
+.form-logo{
+	
+}
+.form-logo img{
+	display: block;
+	width: 235px;
+	height: 58px;
+	margin: 1.5em auto;
+}
+
+
+.inputs-cont{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 0 0 0 45px;
+	gap: 30px;
+}
+
+.inputs-cont > *{
+	padding-right: 1.5em;
+}
+
+
+.inputs-cont .nickname{
+	margin-right: 3em;
+}
+
+.inputs-cont label{
+	line-height: 19px;
+	color: #A08C8C;
+	font-size: 1em;
+}
+
+.inputs-cont input[type="text"], .inputs-cont input[type="email"], .inputs-cont input[type="password"]{
+	background: #F2F2F2;
+	border-radius: 20px;
+	border: 0;
+	width: 330px;
+	height: 40px;
+	display: block;
+	margin-top: .3em;
+	padding-left: 1em;
+	padding-right: 0.6em;
+}
+
+.inputs-cont input[type="submit"]{
+	background: #000;
+	border-radius: 32.41px;
+	font-size: 1.1em;
+	color: #fff;
+	padding: .6em .8em;
+	font-weight: normal;
+	border: 1px solid transparent;
+}
+
+.inputs-cont input[type="submit"]:hover{
+	background: #fff;
+	border-radius: 32.41px;
+	font-size: 1.1em;
+	color: #000;
+	padding: .6em .8em;
+	font-weight: normal;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.inputs-cont .for-button{
+	width: 145px;
+	height: 43px;
+	position: absolute;
+	bottom: -3.6em;
+	right: 3.1em;
+}
+
+
+/*********************************************************
+********************(*BOOKING FORM (USER)*****************
+**********************************************************/
+
+
+.booking-form-container{
+	position: absolute;
+	top: 27em;
+	left: 35.9em;
+	width: 370px;
+	height: 240px;
+	z-index: 2;
+	background: #fff;
+	padding: 0;
+	border: 1px solid #c1c1c1;
+	border-radius: 25px 0;
+}
+
+.booking-form{
+	position: relative;
+	/*border: 1px solid red;*/
+
+}
+
+.booking-form .booking-form-close-btn{
+	border: 0;
+	border-radius: 0 0 0 10px;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #ff0000;
+	top: -1px;
+	right: -1px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.booking-form h1{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.6em;
+	line-height: 33px;
+	color: #000;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1em;
+}
+
+.booking-content{
+	height: 150px;
+	display: flex;
+	flex-flow: column;
+	padding-top: 0;
+	position: relative;
+	margin-top: 2em;
+}
+
+
+
+.booking-content > *{
+	margin: 0 auto;
+}
+
+.booking-content label{
+	position: absolute;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 20px;
+	color: #A08C8C;
+	top: 6.5px;
+	left: 8.5em;
+}
+
+.booking-content input[type="text"]{
+	border: 1px solid transparent;
+	width: 120px;
+	background: #F2F2F2;
+	border-radius: 20px;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 0.4em 0.6em;
+	text-align: right;
+
+	line-height: 20px;
+}
+
+.booking-content input[type="text"]::placeholder{
+	color: #A4C815;
+}
+
+
+.booking-content .for-button{
+		margin-top: 2.3em;
+	}
+
+.booking-content input[type="submit"]{
+	width: 240px;
+	background: #000;
+	border-radius: 32.41px;
+	font-size: 1.1em;
+	color: #fff;
+	padding: .4em .6em;
+	font-weight: normal;
+	border: 1px solid transparent;
+}
+
+.booking-content input[type="submit"]:hover{
+	background: #fff;
+	color: #000;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+
+/*********************************************************
+*********************BOOKING FORM (ADMIN)*****************
+**********************************************************/
+
+
+.booking-form-container-admin{
+
+	position: absolute;
+	top: 27em;
+	left: 35.9em;
+	width: 370px;
+	height: 205px;
+	z-index: 2;
+	background: #fff;
+	padding: 0;
+	border: 1px solid #c1c1c1;
+	border-radius: 25px 0;
+}
+
+.booking-form-admin{
+	position: relative;
+	/*border: 1px solid red;*/
+
+}
+
+.booking-form-admin .booking-form-close-btn-admin{
+	border: 0;
+	border-radius: 0 0 0 10px;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #ff0000;
+	top: -1px;
+	right: -1px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.booking-form-admin h1{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.3em;
+	line-height: 33px;
+	color: #000;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1em;
+}
+
+.booking-content-admin{
+	height: 150px;
+	display: flex;
+	flex-flow: column;
+	padding-top: 0;
+	position: relative;
+	margin-top: 1em;
+}
+
+
+
+.booking-content-admin > *{
+	margin: 0 auto;
+}
+
+.booking-content-admin .customer-label{
+	position: absolute;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 20px;
+	color: #A08C8C;
+	top: 6.5px;
+	left: 3em;
+}
+
+.booking-content-admin input[name="customer"]{
+	margin-top: 0;
+	border: 1px solid transparent;
+	width: 300px;
+	background: #F2F2F2;
+	border-radius: 20px;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 0.4em 0.6em;
+	padding-right: 1.1em;
+	text-align: right;
+	font-weight: 200;
+
+	line-height: 20px;
+}
+
+.booking-content-admin input[name="customer"]::placeholder{
+	color: #A08C8C;
+}
+
+
+.booking-content-admin .price-label{
+	position: absolute;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 20px;
+	color: #A08C8C;
+	bottom: 56.5px;
+	left: 8.5em;
+}
+
+.booking-content-admin input[name="price"]{
+	margin-top: 2em;
+	border: 1px solid transparent;
+	width: 120px;
+	background: #F2F2F2;
+	border-radius: 20px;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 0.4em 0.6em;
+	text-align: right;
+
+	line-height: 20px;
+}
+
+.booking-content-admin input[name="price"]::placeholder{
+	color: #A4C815;
+}
+
+
+
+
+
+/*********************************************************
+****************************MAIN**************************
+**********************************************************/
+
+
+/*****************************************
+*********************Seats****************
+*****************************************/
+
+
+main {
+	width: 1240px;
+	margin: 2em auto;
+	padding: 0;
+	grid-template-rows: 130px 1fr;
+	position: relative;
+	background: #fff;
+}
+
+main .main-header{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: Noto Serif Display;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 4em;
+	line-height: 87px;
+	text-align: center;
+	letter-spacing: 0.805em;
+	color: #000;
+	margin-bottom: 1.2em;
+	text-transform: uppercase;
+}
+
+h1 .spacing-correction{
+	letter-spacing: 0;
+}
+
+main hr{
+	position: absolute;
+	width: 890px;
+	text-align: center;
+	border-bottom: 0;
+	top: 5em;
+	left: 11em;
+
+}
+
+.seats-container{
+	width: 1120px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+.seats-container img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 6em;
+}
+
+.seats{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.seat{
+	height: 50px;
+	width: 50px;
+	background: #000;
+	border-radius: 9px;
+	border: 1px solid transparent;
+	font-weight: 200;
+	font-size: 1.5em;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.005em;
+	color: #fff;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+
+}
+
+.seats div .seat:last-child{
+	margin-right: 0;
+}
+
+.seat > p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+
+/*****************************************
+******************Slider************
+*****************************************/
+
+
+.slider-container{
+	margin: 5em auto;
+	max-width: 1100px;
+}
+
+.slider-container img{
+	width: 95%;
+	height: 325px;
+}
+
+.slider > *{
+	margin: 0 1em;
+}
+
+
+/*****************************************
+*****************Description**************
+*****************************************/
+
+
+.description{
+	width: 760px;
+	margin: 0 auto;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.headers{
+	font-family: Noto Serif Display;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 4em;
+	line-height: 87px;
+	text-align: center;
+	letter-spacing: 0.805em;
+	color: #000;
+	margin-bottom: .3em;
+	text-transform: uppercase;
+	padding-top: 0;
+}
+
+.description p{
+	font-size: 1.5em;
+}
+
+
+/*****************************************
+*******************Actors*****************
+*****************************************/
+
+.actors{
+	margin-top: 4em;
+}
+
+.actors img{
+	width: 90%;
+	height: 200px;
+}
+
+
+/*****************************************
+**************Behind the scenes***********
+*****************************************/
+
+
+.behind{
+	max-width: 1100px;
+	margin: 6em auto;
+	
+}
+
+.behind h1{
+	margin-bottom: 0.6em;
+}
+
+.behind-container{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+}
+
+.behind-container > *{
+	background: #000;
+	display: flex;
+
+}
+
+.behind-container img{
+
+	width: 150px;
+	height: 170px;
+}
+
+.behind-container h1{
+	padding-top: 1.5em;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	letter-spacing: 0.42em;
+	color: #fff;
+}
+
+.behind-container h1 span{
+	display: block;
+}
+
+.behind-container p{
+	font-size: 0.9em;
+	line-height: 22px;
+	letter-spacing: 0.12em;
+	color: #fff;
+}
+
+.bh-cont-wrapper{
+	padding-left: 1em;
+}
+
+
+
+/*********************************************************
+**************************FOOTER**************************
+**********************************************************/
+
+
+footer{
+	background: #000;
+	padding-bottom: 1.2em;
+	padding-top: .5em;
+	margin-top: 2.5em;
+}
+
+.footer-container{
+	width: 1240px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 1.5em;
+}
+
+.footer-container section{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	margin-bottom: 1em;
+}
+
+.footer-container .img-container{
+	padding-right: 3em;
+	padding-left: 0.1em;
+}
+
+.footer-container img{
+	width: 380px;
+	height: 60px;
+}
+
+.footer-container section p{
+	display: flex;
+	align-items: center;
+	color: white;
+	font-weight: 400;
+	padding: 0;
+	font-size: .9em;
+	padding-left: 2em;
+}
+
+.footer-container h1{
+	margin-top: .2em;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 400;
+	width: 420px;
+	text-align: center;
+}
